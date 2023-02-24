@@ -7,7 +7,8 @@ namespace R5T.F0105.Construction
     {
         static void Main()
         {
-            Console.WriteLine("Hello World!");
+            //Operations.Instance.ListMethodNames();
+            Operations.Instance.ListPropertyNames();
         }
     }
 }
