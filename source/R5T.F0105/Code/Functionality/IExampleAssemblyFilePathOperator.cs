@@ -16,11 +16,8 @@ namespace R5T.F0105
         /// </remarks>
         public string Get_ExampleAssemblyFilePath()
         {
-            var assemblyFileName = Instances.FileNameOperator.Get_AssemblyFileName(
+            var exampleAssemblyFilePath = Instances.ExecutablePathOperator.Get_ExecutableDirectoryAssemblyFilePath(
                 Instances.AssemblyNames.ExampleAssemblyName);
-
-            var exampleAssemblyFilePath = Instances.ExecutablePathOperator.GetExecutableDirectoryRelativeFilePath(
-                assemblyFileName);
 
             return exampleAssemblyFilePath;
         }
