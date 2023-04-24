@@ -11,8 +11,8 @@ namespace R5T.F0105
     public partial interface IExampleContextReflectionOperator : IFunctionalityMarker
     {
         public void InExampleMethodContext_Synchronous(
-            TypeName typeName,
-            MethodName methodName,
+            ITypeName typeName,
+            IMethodName methodName,
             Action<MethodInfo> methodInfoAction)
         {
             Instances.ReflectionOperator.InMethodContext_Synchronous(
@@ -23,8 +23,8 @@ namespace R5T.F0105
         }
 
         public void InExamplePropertyContext_Synchronous(
-            TypeName typeName,
-            PropertyName propertyName,
+            ITypeName typeName,
+            IPropertyName propertyName,
             Action<PropertyInfo> propertyInfoAction)
         {
             Instances.ReflectionOperator.InPropertyContext_Synchronous(
@@ -35,7 +35,7 @@ namespace R5T.F0105
         }
 
         public void InExampleTypeContext_Synchronous(
-            TypeName typeName,
+            ITypeName typeName,
             Action<TypeInfo> typeInfoAction)
         {
             Instances.ReflectionOperator.InTypeContext_Synchronous(
